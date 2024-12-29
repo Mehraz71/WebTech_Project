@@ -11,6 +11,10 @@ $confirm_password = trim($_POST['confirm_password']);
 $address = trim($_POST['address']);
 $captcha = trim($_POST['captcha']);
 
+$conn = mysqli_connect('127.0.0.1', 'root', '', 'brta');
+$sql = "SELECT * FROM users WHERE email = '$email'";
+$result = mysqli_query($conn, $sql);
+
 $errors = [];
 
 
@@ -20,8 +24,14 @@ if(empty($name)){
 
 if (empty($email)) {
    $errors[] = "Enter a valid email";
+
 } elseif (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
    $errors[] = "Invalid email format.";
+}elseif ($result && mysqli_num_rows($result) > 0) {
+    $errors[]= "Email already exists.";
+}
+else{
+    $_SESSION['email'] = $email;
 }
 
 if (empty($pass) || empty($confirm_password))
@@ -49,7 +59,21 @@ if (!empty($errors)) {
         echo "<p style='color:red;'>$error</p>";
     }
 } else {
-    // Process the form (e.g., save to database)
+$_SESSION['user_data']=
+[
+    'Name' => $name,
+    'Email' => $email,
+    'Phone' => $phone_number,
+    'Pass' => $pass,
+   'Address' => $address,
+];
+
+header("Location: otp.php");
+
+
+
+
+    /*// Process the form (e.g., save to database)
 
     // Password hashing
     $hashedPassword = password_hash($pass, PASSWORD_DEFAULT);
@@ -61,10 +85,20 @@ if (!empty($errors)) {
     // Execute the query and check for errors
     if (mysqli_query($conn, $sql)) {
         echo "<p style='color:green;'>Form submitted successfully!</p>";
+        
     } else {
         echo "<p style='color:red;'>Error: " . mysqli_error($conn) . "</p>";
-    }
+    }*/
 }
+
+
+
+
+
+
+}
+else{echo"EROR";
+
 }
 
 

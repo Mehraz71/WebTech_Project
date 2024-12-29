@@ -1,0 +1,22 @@
+#notice {
+  background-color: rgb(250, 232, 195);
+  position: relative;
+
+  left: 220px;
+  bottom: 90px;
+  height: 560px;
+  width: 1000px;
+
+  margin: 100px;
+
+  border-radius: 5px;
+  border-color: rgb(164, 137, 82);
+}
+#notice h1 {
+  margin: 20px;
+  color: rgb(4, 142, 255);
+  font-family: "Times New Roman", Times, serif;
+  background-color: wheat;
+  border-radius: 5px;
+  text-align: center;
+}

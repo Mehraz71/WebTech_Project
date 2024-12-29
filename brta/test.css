@@ -1,3 +1,4 @@
+/* General Styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -33,12 +34,52 @@ main {
   padding: 20px;
   gap: 20px;
 }
+
+/* General Container Style */
 .container {
-  position: relative;
-  left: 100px;
+  position: absolute;
+  top: 500px; /* 400px from the top */
+  left: px; /* 500px from the left */
+  display: flex;
+  flex-direction: column;
+  gap: 20px; /* Space between the buttons */
+}
+
+/* General Button Style */
+.container button {
+  padding: 12px 24px;
+  font-size: 16px;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+/* Hover Effect */
+.container button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Active Effect */
+.container button:active {
+  background-color: #003f7f;
+  transform: scale(0.95);
+}
+
+/* Remove default anchor styling */
+.container a {
+  text-decoration: none;
 }
 
 .lgn button {
+  position: absolute;
+  left: 2px;
+  top: 2px;
+
   padding: 12px 24px;
   font-size: 16px;
   color: #ffffff;
@@ -59,14 +100,16 @@ main {
   transform: scale(0.95);
 }
 
+/* Remove default anchor styling */
 .lgn a {
   text-decoration: none;
 }
-/* 
+/* Style for the login container */
 .login {
   position: relative;
   right: 10px;
   padding: 10%; /* Optional: Add padding */
+}
 
 /* Style for the anchor tag and button */
 .login a {
@@ -104,7 +147,11 @@ main {
 }
 
 .Signup button {
-  padding: 10px 20px;
+  position: absolute;
+
+  right: 8px;
+  top: 2px;
+  padding: 12px 20px;
   background-color: rgb(8, 8, 8); /* Button background color */
   color: white; /* Text color */
   border: none; /* Remove default border */
