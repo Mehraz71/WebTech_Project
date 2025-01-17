@@ -1,0 +1,62 @@
+h2 {
+  position: absolute;
+  top: 200px;
+  left: 700px;
+  background-color: antiquewhite;
+}
+.table {
+  position: relative;
+  top: 200px;
+  left: 450px;
+  background-color: rgb(244, 241, 237);
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 800px;
+  width: 600px;
+  border-radius: 5px;
+  border: 10px;
+  border-color: black;
+}
+.table th {
+  padding: 20px;
+  border-color: black;
+}
+.table td {
+  padding: 20px;
+  text-align: left;
+}
+.table button {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  left: 10px;
+  border-radius: 5px;
+  background-color: dodgerblue;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+.table button:hover {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  left: 10px;
+  border-radius: 5px;
+  background-color: rgb(28, 130, 233);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+form {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+#tbl {
+  position: relative;
+  left: 500px;
+  top: 500px;
+}

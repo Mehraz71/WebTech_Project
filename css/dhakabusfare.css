@@ -1,0 +1,53 @@
+h2 {
+  position: absolute;
+  top: 200px;
+  left: 600px;
+  background-color: rgba(34, 141, 255, 0.796);
+  border-radius: 10px;
+  width: 500px;
+  text-align: center;
+}
+.table {
+  position: relative;
+  top: 200px;
+  left: 400px;
+  background-color: rgb(244, 241, 237);
+  font-size: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  width: 1000px;
+  border-radius: 5px;
+  border-width: 50px;
+  border-color: black;
+  text-align: center;
+}
+.table th {
+  padding: 40px;
+  border-color: black;
+}
+.table td {
+  padding: 20px;
+}
+.table button {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  left: 10px;
+  border-radius: 5px;
+  background-color: dodgerblue;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}
+.table button:hover {
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  position: relative;
+  left: 10px;
+  border-radius: 5px;
+  background-color: rgb(28, 130, 233);
+  font-family: "Times New Roman", Times, serif;
+  font-size: 20px;
+}

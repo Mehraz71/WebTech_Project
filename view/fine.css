@@ -1,0 +1,23 @@
+table {
+  position: absolute;
+  left: 600px;
+  top: 200px;
+}
+a.button {
+  position: absolute;
+  right: 550px;
+  bottom: 250px;
+  padding: 10px 20px;
+
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  text-decoration: none; /* Remove underline */
+  border-radius: 5px;
+  text-align: center;
+  cursor: pointer;
+}
+
+a.button:hover {
+  background-color: #0056b3;
+}

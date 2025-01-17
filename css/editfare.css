@@ -1,0 +1,93 @@
+/* General body styling */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f9;
+  margin: 0;
+}
+
+/* Header styling */
+h2 {
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Form container styling */
+form {
+  position: relative;
+  left: 100px;
+}
+
+/* Table styling */
+.table {
+  width: 1000px;
+  margin: 0 auto;
+  border-collapse: collapse;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+}
+
+table tr {
+  margin: 10px 0;
+}
+
+table td {
+  padding: 8px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+table td input {
+  padding: 8px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+/* Submit and Reset buttons */
+input[type="submit"],
+input[type="reset"] {
+  padding: 10px 15px;
+  margin-top: 10px;
+  margin-left: 5px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+input[type="reset"] {
+  background-color: #e4082d;
+}
+
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+  background-color: #0056b3;
+  color: #fff;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  table {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  input {
+    width: 90%;
+  }
+
+  h2 {
+    font-size: 20px;
+  }
+}
