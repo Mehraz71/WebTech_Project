@@ -33,12 +33,34 @@ main {
   padding: 20px;
   gap: 20px;
 }
+/* Container styling */
 .container {
   position: absolute;
-  top: 500px;
-  left: 600px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); /* Centers the container */
+  text-align: center; /* Centers content inside the container */
 }
 
+/* Button styling */
+.container .lgn button,
+.container .Signup button {
+  margin: 10px;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: #4caf50; /* Green button background */
+  color: white; /* White text */
+}
+
+.container .lgn button:hover,
+.container .Signup button:hover {
+  background-color: #45a049; /* Slightly darker green on hover */
+}
+
+/*
 .lgn button {
   padding: 12px 24px;
   font-size: 16px;
@@ -62,7 +84,7 @@ main {
 
 .lgn a {
   text-decoration: none;
-}
+}*/
 /* 
 .login {
   position: relative;
@@ -119,6 +141,7 @@ main {
 .Signup button:hover {
   background-color: rgb(50, 50, 50); /* Darker background on hover */
 }
+*/
 
 /* About Section */
 #about {

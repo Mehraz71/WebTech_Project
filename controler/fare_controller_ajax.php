@@ -47,6 +47,21 @@ elseif($fare == "intercityfare"){
 
 }
 
+elseif($fare == "chittagong"){
+
+    $result = ctgbusfare();
+    if ($result && mysqli_num_rows($result) > 0) {
+        $showfare = [];
+        while ($row = mysqli_fetch_assoc($result)) {
+            $showfare[] = $row;
+            
+        }
+        echo json_encode($showfare);
+
+}
+
+}
+
 }
 
 

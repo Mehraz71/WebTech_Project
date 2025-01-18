@@ -11,7 +11,7 @@ if (!isset($_SESSION['username']) && (!isset($_COOKIE['logged_in']) || $_COOKIE[
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fare</title>
+    <title>Admin_Fare</title>
     <link rel="stylesheet" href="../css/fare.css" />
     <script src="../js/editfare.js"></script>
   </head>
@@ -34,7 +34,7 @@ if (!isset($_SESSION['username']) && (!isset($_COOKIE['logged_in']) || $_COOKIE[
         <tr>
           <td id="ctg">Chittagong Metro Area Bus Fare</td>
           <td>
-          <input type="button" id="btn2" name="" value="View" onclick="ctgfare()" />
+          <input type="button" id="btn2" name="" value="View" onclick="chittagong()" />
           </td>
         </tr>
         <tr>
@@ -45,7 +45,7 @@ if (!isset($_SESSION['username']) && (!isset($_COOKIE['logged_in']) || $_COOKIE[
       </table>
       <table id="tbl" border="1">
     <thead>
-        <tr>
+        <tr><th>ID</th>
             <th>Starting_point</th>
             <th>Ending_point</th>
             <th>Fare</th>
